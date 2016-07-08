@@ -1,0 +1,10 @@
+version: '2'
+services:
+  node:
+    command: /bin/sh -c "while true; do echo hello world; sleep 1; done"
+    image: node
+    working_dir: /opt
+    volumes:
+     - .:/opt
+    env_file: .env
+ 
